@@ -19,6 +19,7 @@ return {
 					"lua_ls",
 					"ocamllsp",
 					"pyright",
+					"rust_analyzer",
 					"tsserver",
 					"tailwindcss",
 				},
@@ -42,6 +43,7 @@ return {
 				"lua_ls",
 				"ocamllsp",
 				"pyright",
+				"rust_analyzer",
 				"tsserver",
 				"tailwindcss",
 			}
