@@ -17,3 +17,7 @@ vim.keymap.set("n", "k", "kzz", { noremap = true })
 -- move visual block up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { noremap = true })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { noremap = true })
+
+-- move visual block left and right
+vim.keymap.set("v", "<", "<gv", { noremap = true })
+vim.keymap.set("v", ">", ">gv", { noremap = true })

@@ -8,3 +8,5 @@ vim.opt.cinkeys:remove(":")
 vim.opt.indentkeys:remove(":")
 vim.opt.undofile = true
 vim.opt.cursorline = true
+vim.opt.swapfile = false
+vim.opt.writebackup = false
