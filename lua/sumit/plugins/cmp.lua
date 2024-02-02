@@ -111,7 +111,6 @@ return {
 					})[entry.source.name]
 
 					return require("tailwindcss-colorizer-cmp").formatter(entry, vim_item)
-					-- return vim_item
 				end,
 			},
 			sources = cmp.config.sources({}, {
