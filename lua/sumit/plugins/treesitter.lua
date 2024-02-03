@@ -1,10 +1,14 @@
 local M = {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
+	dependencies = {
+		"nvim-treesitter/nvim-treesitter-context",
+	},
 }
 
 function M.config()
 	local configs = require("nvim-treesitter.configs")
+
 	configs.setup({
 		ensure_installed = {
 			"lua",
