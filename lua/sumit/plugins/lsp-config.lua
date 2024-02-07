@@ -17,7 +17,6 @@ return {
 					"jdtls",
 					"marksman",
 					"lua_ls",
-					"ocamllsp",
 					"pyright",
 					"rust_analyzer",
 					"tsserver",
