@@ -21,3 +21,10 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { noremap = true })
 -- move visual block left and right
 vim.keymap.set("v", "<", "<gv", { noremap = true })
 vim.keymap.set("v", ">", ">gv", { noremap = true })
+
+-- switch prev and next buffers
+vim.keymap.set("n", "<Tab>", "<cmd>bnext<cr>", { noremap = true })
+vim.keymap.set("n", "<S-Tab>", "<cmd>bprev<cr>", { noremap = true })
+
+-- delete current buffer
+vim.keymap.set("n", "<leader>db", "<cmd>bdelete<cr>", { noremap = true })
