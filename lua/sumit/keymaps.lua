@@ -27,4 +27,8 @@ vim.keymap.set("n", "<Tab>", "<cmd>bnext<cr>", { noremap = true })
 vim.keymap.set("n", "<S-Tab>", "<cmd>bprev<cr>", { noremap = true })
 
 -- delete current buffer
-vim.keymap.set("n", "<leader>db", "<cmd>bdelete<cr>", { noremap = true })
+vim.keymap.set("n", "<leader>c", "<cmd>bdelete<cr>", { noremap = true, nowait = true })
+
+-- split window vertically and horizontally
+vim.keymap.set("n", "<leader>v", "<C-w>v", { noremap = true })
+vim.keymap.set("n", "<leader>s", "<C-w>s", { noremap = true })

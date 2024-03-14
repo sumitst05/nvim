@@ -21,7 +21,7 @@ function M.config()
 		},
 	})
 
-	vim.keymap.set("n", "<leader>cc", "<cmd>CloakToggle<cr>", { noremap = true })
+	vim.keymap.set("n", "<leader>x", "<cmd>CloakToggle<cr>", { noremap = true })
 end
 
 return M
