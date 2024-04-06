@@ -19,8 +19,9 @@ return {
 					"lua_ls",
 					"pyright",
 					"rust_analyzer",
-					"tsserver",
 					"tailwindcss",
+					"templ",
+					"tsserver",
 				},
 			})
 		end,
@@ -40,11 +41,11 @@ return {
 				"jdtls",
 				"marksman",
 				"lua_ls",
-				"ocamllsp",
 				"pyright",
 				"rust_analyzer",
-				"tsserver",
 				"tailwindcss",
+				"templ",
+				"tsserver",
 			}
 
 			for _, lang in ipairs(languages) do
@@ -66,6 +67,8 @@ return {
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { noremap = true })
 			vim.api.nvim_set_keymap("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true })
 			vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, { noremap = true })
+
+			vim.filetype.add({ extension = { templ = "templ" } })
 		end,
 	},
 }

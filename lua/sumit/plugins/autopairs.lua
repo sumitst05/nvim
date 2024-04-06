@@ -8,7 +8,7 @@ local M = {
 
 function M.config()
 	require("nvim-ts-autotag").setup({
-		filetypes = { "html", "xml", "javascriptreact", "typescriptreact", "javascript", "typescript" },
+		filetypes = { "html", "xml", "javascriptreact", "typescriptreact", "javascript", "typescript", "templ" },
 	})
 
 	require("nvim-autopairs").setup({
