@@ -57,6 +57,12 @@ return {
 							"--offset-encoding=utf-16",
 						},
 					})
+				elseif lang == "tailwindcss" then
+					lspconfig[lang].setup({
+						capabilities = capabilities,
+						filetypes = { "html", "templ", "astro", "javascript", "typescript", "react" },
+						init_options = { userLanguages = { templ = "html" } },
+					})
 				else
 					lspconfig[lang].setup({
 						capabilities = capabilities,
