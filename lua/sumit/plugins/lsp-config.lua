@@ -30,7 +30,6 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 			local lspconfig = require("lspconfig")
 
 			local languages = {
@@ -48,26 +47,36 @@ return {
 				"tsserver",
 			}
 
-			for _, lang in ipairs(languages) do
-				if lang == "clangd" then
-					lspconfig[lang].setup({
-						capabilities = capabilities,
-						cmd = {
-							"clangd",
-							"--offset-encoding=utf-16",
-						},
-					})
-				elseif lang == "tailwindcss" then
-					lspconfig[lang].setup({
-						capabilities = capabilities,
+			local function setupLSP(lang)
+				local setup_config = {
+					capabilities = capabilities,
+				}
+
+				local lsp_setup = {
+					clangd = {
+						cmd = { "clangd", "--offset-encoding=utf-16" },
+					},
+					tailwindcss = {
 						filetypes = { "html", "templ", "astro", "javascript", "typescript", "react" },
 						init_options = { userLanguages = { templ = "html" } },
-					})
-				else
-					lspconfig[lang].setup({
-						capabilities = capabilities,
-					})
+					},
+					html = {
+						filetypes = { "html", "templ" },
+					},
+				}
+
+				local specific_setup = lsp_setup[lang]
+				if specific_setup then
+					for k, v in pairs(specific_setup) do
+						setup_config[k] = v
+					end
 				end
+
+				lspconfig[lang].setup(setup_config)
+			end
+
+			for _, lang in ipairs(languages) do
+				setupLSP(lang)
 			end
 
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { noremap = true })
