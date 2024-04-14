@@ -14,6 +14,7 @@ return {
 					"clangd",
 					"gopls",
 					"html",
+					"htmx",
 					"jdtls",
 					"marksman",
 					"lua_ls",
@@ -37,6 +38,7 @@ return {
 				"clangd",
 				"gopls",
 				"html",
+				"htmx",
 				"jdtls",
 				"marksman",
 				"lua_ls",
@@ -61,6 +63,9 @@ return {
 						init_options = { userLanguages = { templ = "html" } },
 					},
 					html = {
+						filetypes = { "html", "templ" },
+					},
+					htmx = {
 						filetypes = { "html", "templ" },
 					},
 				}
