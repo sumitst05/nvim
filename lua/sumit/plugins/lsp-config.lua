@@ -59,7 +59,7 @@ return {
 						cmd = { "clangd", "--offset-encoding=utf-16" },
 					},
 					tailwindcss = {
-						filetypes = { "html", "templ", "astro", "javascript", "typescript", "react" },
+						filetypes = { "html", "templ", "astro", "javascript", "javascriptreact", "typescript", "typescriptreact", "react" },
 						init_options = { userLanguages = { templ = "html" } },
 					},
 					html = {
