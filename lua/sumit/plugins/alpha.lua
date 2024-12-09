@@ -34,7 +34,7 @@ function M.config()
 	local buttons = {
 		type = "group",
 		val = {
-			{ type = "text", val = "Shortcuts", opts = { hl = "SpecialComment", position = "center" } },
+			{ type = "text",    val = "Shortcuts", opts = { hl = "SpecialComment", position = "center" } },
 			{ type = "padding", val = 1 },
 			dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
 			dashboard.button("f", "  Find file", ":cd $HOME | Telescope find_files<CR>"),

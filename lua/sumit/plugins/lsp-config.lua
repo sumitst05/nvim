@@ -22,7 +22,7 @@ return {
 					"rust_analyzer",
 					"tailwindcss",
 					"templ",
-					"tsserver",
+					"ts_ls",
 				},
 			})
 		end,
@@ -46,7 +46,7 @@ return {
 				"rust_analyzer",
 				"tailwindcss",
 				"templ",
-				"tsserver",
+				"ts_ls",
 			}
 
 			local function setupLSP(lang)
