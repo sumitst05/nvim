@@ -94,7 +94,7 @@ function M.config()
 			file_browser = {
 				hijack_netrw = true,
 				theme = "dropdown",
-				initial_mode = "normal",
+				initial_mode = "insert",
 				mappings = {
 					["i"] = {
 						-- your custom insert mode mappings
@@ -108,22 +108,22 @@ function M.config()
 
 		pickers = {
 			live_grep = {
-				initial_mode = "normal",
+				initial_mode = "insert",
 				theme = "dropdown",
 			},
 			grep_string = {
-				initial_mode = "normal",
+				initial_mode = "insert",
 				theme = "dropdown",
 			},
 			find_files = {
-				initial_mode = "normal",
+				initial_mode = "insert",
 				theme = "dropdown",
 			},
 			current_buffer_fuzzy_find = {
 				initial_mode = "insert",
 			},
 			buffers = {
-				initial_mode = "normal",
+				initial_mode = "insert",
 				theme = "dropdown",
 				previewer = false,
 			},

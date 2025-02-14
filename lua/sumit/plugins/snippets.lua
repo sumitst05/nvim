@@ -139,14 +139,18 @@ function M.config()
 			"cc",
 			fmt(
 				[[
-				def main():
-					{}
+				def solve():
+					{}pass
 
-				if __name__ == "__main__":
+
+				def main():
 					t = int(input())
 					for _ in range(t):
-						main()
+						solve()
 
+
+				if __name__ == "__main__":
+					main()
 				]],
 				{
 					insert(0),
