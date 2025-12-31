@@ -1,5 +1,0 @@
-vim.cmd("set clipboard=unnamedplus")
-vim.cmd("set tabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set noexpandtab")
-vim.cmd("set cmdheight=1")
