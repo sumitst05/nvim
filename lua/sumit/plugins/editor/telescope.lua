@@ -7,7 +7,7 @@ return {
 		"ahmedkhalf/project.nvim",
 	},
 	keys = {
-		{ "<leader>b",  "<cmd>Telescope buffers<cr>",                   desc = "Buffers" },
+		{ "<leader>tb",  "<cmd>Telescope buffers<cr>",                   desc = "Buffers" },
 		{ "<leader>fb", "<cmd>Telescope file_browser<cr>",              desc = "File Browser" },
 		{ "<leader>ff", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Fuzzy Find in Buffer" },
 		{ "<leader>fg", "<cmd>Telescope live_grep<cr>",                 desc = "Live Grep" },
