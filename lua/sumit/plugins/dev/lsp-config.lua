@@ -4,6 +4,7 @@ return {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"hrsh7th/cmp-nvim-lsp",
+		"mfussenegger/nvim-jdtls",
 	},
 	config = function()
 		vim.diagnostic.config({
@@ -37,6 +38,7 @@ return {
 		vim.lsp.config('*', {
 			capabilities = capabilities,
 		})
+
 
 		local servers = {
 			bashls = {},

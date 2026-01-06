@@ -1,3 +1,6 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- Unhighlight last search
 vim.keymap.set("n", "<leader>H", ":nohlsearch<CR>", { noremap = true, silent = true, desc = "Clear Highlights" })
 
@@ -24,7 +27,7 @@ vim.keymap.set("v", ">", ">gv", { noremap = true })
 -- Buffer Navigation
 vim.keymap.set("n", "<Tab>", "<cmd>bnext<cr>", { noremap = true, desc = "Next Buffer" })
 vim.keymap.set("n", "<S-Tab>", "<cmd>bprev<cr>", { noremap = true, desc = "Prev Buffer" })
-vim.keymap.set("n", "<leader>bd", "<cmd>bdelete<cr>", { noremap = true, desc = "Close Buffer" })
+vim.keymap.set("n", "<leader>bd", "<cmd>:bdelete<cr>", { noremap = true, desc = "Close Buffer" })
 
 -- Window Splitting
 vim.keymap.set("n", "<leader>v", "<C-w>v", { noremap = true, desc = "Split Vertical" })
