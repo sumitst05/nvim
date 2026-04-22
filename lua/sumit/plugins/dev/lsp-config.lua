@@ -45,6 +45,12 @@ return {
 			gopls = {},
 			html = {},
 			htmx = {},
+			qmlls = {
+				qmlls = {
+					root_dir = require("lspconfig.util").root_pattern("qmldir", ".git", "main.qml"),
+					filetypes = { "qml" },
+				},
+			},
 			jdtls = {},
 			marksman = {},
 			pyright = {},
